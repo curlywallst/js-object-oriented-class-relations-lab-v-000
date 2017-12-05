@@ -82,12 +82,14 @@ describe('trips', function() {
     it('adds the trip to the store', function() {
       store.trips = []
       let trip = new Trip()
+
       expect(store.trips[0]).to.be.instanceof(Trip)
     })
 
     it('adds a numerical id to each trip', function() {
       store.trips = []
       let trip = new Trip()
+
       expect(typeof store.trips[0].id).to.equal("number")
     })
 
